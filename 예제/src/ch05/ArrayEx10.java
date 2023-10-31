@@ -4,24 +4,30 @@ import java.util.Arrays;
 
 public class ArrayEx10 {
 
+	// 버블정렬을 이용한 크기순으로 정렬
 	public static void main(String[] args) {
 		int[] arr = new int[10];
-		int[] counter = new int[10];
+		int tmp = 0; // 임시로 저장 할 변수
 		
+		// 0 ~ 9 숫자들을 랜덤으로 배열 arr에 저장
 		for(int i = 0; i < arr.length; i++) {
 			arr[i] = (int)(Math.random() * 10);
 		}
 		System.out.println(Arrays.toString(arr));
 		
-		// arr[i]의 값은 counter의 인덱스 중 하나와 같다(0 ~ 9)
-		// 같은 게 나올 때마다 1씩 증가
-		for(int i = 0; i < arr.length; i++) {
-			counter[arr[i]]++;
+		// 배열 요소들을 비교
+		for(int i = 0; i < arr.length - 1; i++) {
+			for(int j = 0; j < arr.length - 1 - i; j++) {
+				// arr[j]와 바로 옆의 요소 arr[j + 1]을 비교
+				if(arr[j] > arr[j + 1]) {
+					tmp = arr[j];
+					arr[j] = arr[j + 1];
+					arr[j + 1] = tmp;
+				}
+			}
 		}
-		
-		for(int i = 0; i < arr.length; i++) {
-			System.out.println(i + "의 개수 : " + counter[i]);
-		}
+		// 버블정렬 후 배열 arr 출력
+		System.out.println(Arrays.toString(arr));
 	}
 
 }
