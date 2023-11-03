@@ -1,4 +1,6 @@
-Exercise2_8 참조형 변수와 같은 크기의 기본형 변수는?
+Exercise2_8
+
+Q) 참조형 변수와 같은 크기의 기본형 변수는?
 
 // 참조형 변수는 4byte
 
@@ -8,4 +10,4 @@ c. short // 2byte
 d. float // 4byte
 e. double // 8byte
 
-답 a, d
+A) a, d

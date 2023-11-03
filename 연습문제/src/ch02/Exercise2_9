@@ -1,4 +1,6 @@
-Exercise2_9 형변환 생략 가능한 것은?
+Exercise2_9
+
+Q) 형변환 생략 가능한 것은?
 
 byte b = 10;
 char ch = 'A';
@@ -11,4 +13,4 @@ c. short s = (short)ch; // 같은 크기, 다른 범위 -> 생략 불가능
 d. float f = (float)l; // 큰 범위로 형변환 -> 가능
 e. i = (int)ch; // 큰 범위로 형변환 -> 가능
 
-답 d, e
+A) d, e

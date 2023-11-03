@@ -1,4 +1,6 @@
-Exercise2_13 타입과 기본값 잘못 연결된 것은?
+Exercise2_13
+
+Q) 타입과 기본값 잘못 연결된 것은?
 
 a. boolean - false
 b. char - '\u0000'
@@ -7,4 +9,4 @@ d. int - 0
 e. long - 0 // 접미사 L
 f. String - "" // 기본값은 null
 
-답 c, e, f
+A) c, e, f
