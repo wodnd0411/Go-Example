@@ -89,5 +89,67 @@ public class MultiArrEx1 {
 			}
 		}
 	}
+	
+//	public static void main(String[] args) {
+//		final int SIZE = 10;
+//		int x = 0;
+//		int y = 0;
+//		
+//		char[][] myCoordinate = new char[SIZE][SIZE];
+//		
+//		byte[][] shipCoordinate = {
+//						  //  1  2  3  4  5  6  7  8  9
+//							{ 0, 0, 0, 0, 0, 0, 1, 0, 0 }, // 1
+//							{ 1, 1, 1, 1, 0, 0, 1, 0, 0 }, // 2
+//							{ 0, 0, 0, 0, 0, 0, 1, 0, 0 }, // 3
+//							{ 0, 0, 0, 0, 0, 0, 1, 0, 0 }, // 4
+//							{ 0, 0, 0, 0, 0, 0, 0, 0, 0 }, // 5
+//							{ 1, 1, 0, 1, 0, 0, 0, 0, 0 }, // 6
+//							{ 0, 0, 0, 1, 0, 0, 0, 0, 0 }, // 7
+//							{ 0, 0, 0, 1, 0, 0, 0, 0, 0 }, // 8
+//							{ 0, 0, 0, 0, 0, 1, 1, 1, 0 }, // 9
+//				};
+//		
+//		for(int i = 1; i < myCoordinate.length; i++) {
+//			myCoordinate[i][0] = (char)(i + '0');
+//			myCoordinate[0][i] = (char)(i + '0');
+//		}
+//		
+//		Scanner sc = new Scanner(System.in);
+//		
+//		while(true) {
+//			System.out.print("x좌표와 y좌표 입력(종료 0 0) : ");
+//			x = sc.nextInt();
+//			y = sc.nextInt();
+//			
+//			if(x == 0 && y == 0) {
+//				System.out.println("종료");
+//				
+//				break;
+//			}
+//			else if(x > 9 || y > 9) {
+//				System.out.println("잘못된 입력입니다.");
+//				
+//				continue;
+//			}
+//			else {
+//				if(shipCoordinate[x - 1][y - 1] == 1) {
+//					myCoordinate[x][y] = 'O';
+//				}
+//				else {
+//					myCoordinate[x][y] = 'X';
+//				}
+//				
+//				// myCoordinate 출력
+//				for(int i = 0; i < myCoordinate.length; i++) {
+//					for(int j = 0; j < myCoordinate[i].length; j++) {
+//						System.out.print(myCoordinate[i][j]);
+//					}
+//					
+//					System.out.println();
+//				}
+//			}
+//		}
+//	}
 
 }
