@@ -2,16 +2,10 @@ package ch07;
 
 public class Shape {
 	
-	String color;
+	String color = "black";
 	
-	Shape() {
-		this("black");
-	}
-	
-	Shape(String color) {
-		this.color = color;
-	}
-	
+	// 컴파일러가 기본 생성자 Shape() 생성
+
 	void draw() {
 		System.out.printf("[color = %s]%n", color);
 	}
